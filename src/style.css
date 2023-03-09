@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background: rgb(5, 11, 26);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.header .logo{
+    font-size: 1.8rem;
+    font-family:monospace;
+    color: #fff;
+}
+
+.header{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    padding: 2rem 10%;
+    background-color: rgba(20, 34, 49,0);
+    display: flex;
+    color: #ddd;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.navigation{
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header input,.hero-landing input{
+    padding: 0.5rem 1.6rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgba(151, 151, 151,0.4);
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+    
+}
+
+.header .search,.hero-landing .search{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header .search-icon,.hero-landing .search-icon{
+    height: 1.6rem;
+    filter: invert(100%);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.header .search-icon:hover,.hero-landing .search-icon:hover{
+    filter: invert(80%);
+}
+
+.header input:focus,.hero-landing input:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255,0.9);
+    color: #000;
+}
+.header input:hover,.hero-landing input:hover{
+    background-color: rgba(255, 255, 255,0.9);
+    color: #000;
+}
+
+.header li{
+    cursor: pointer;
+}
+
+.home-page{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.header li:hover{
+    color: #fff;
+}
+
+.hero,.detail{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("../public/images/hero.png");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    color: #fff;
+    box-shadow: 0 -20px 25px rgb(5, 11, 26) inset;
+}
+
+.detail{
+    background: linear-gradient(to right, rgba(11, 13, 29, 0.8), rgba(2, 2, 2, 0.7));
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.hero-info{
+    position: relative;
+    font-size: 1.5rem;
+    gap: 2rem;
+    font-family: 'Ubuntu', cursive;
+    font-weight: 300;
+    
+}
+
+.detail .hero-info{
+    position: absolute;
+    
+}
+
+.hero-landing {
+    display: flex;
+    padding:10rem 10%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    
+}
+
+.hero-landing .search input{
+    height: 3rem;
+    width: 30rem;
+    margin-left: 1rem;
+    border-radius: 5rem;
+}
+
+.hero-landing .desc{
+    font-size: 1.8rem !important ;
+    line-height: 5rem;
+}
+
+.hero-landing .desc span{
+    color: rgb(0, 205, 205);
+    font-size: 2.4rem;
+}
+
+
+.detail .hero-info{
+    text-align: left;
+    gap: 4rem;
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+    
+}
+
+.hero-info .info{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.detail .hero-info .info{
+    font-size: 1.6rem;
+}
+
+.detail .hero-info .desc{
+    text-indent: 3rem;
+    font-size: 1.6rem;
+    color: #f5f5f5;
+
+}
+
+.quality{
+    font-size: 1.3rem;
+    padding: 0.3rem 0.9rem;
+    background: rgb(0, 137, 183);
+    border-radius: 1rem;
+}
+
+.hero-info .desc{
+    font-size: 1.3rem;
+    color: #ddd;
+}
+
+.star-icon{
+    width: 1.6rem;
+}
+
+.hero-info .rating{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    color: #fff;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.card .card-img{
+    width: 200px;
+    border-radius: 0.8rem;
+}
+
+.card .card-title{
+    padding: 0.5rem;
+    list-style-type: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.card .card-info{
+    padding: 0.5rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 1rem;
+}
+
+.card-container{
+    width: 100%;
+    padding: 2rem;
+    color: #5b5b5b;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
+    margin-top: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.container-title{
+    justify-self: start;
+    align-self: self-start;
+    margin: 2rem;
+}
+
+
+.buttons button{
+    background: rgba(0, 137, 183,0.7);
+    color: #fff;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    font-family: monospace;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+    
+.buttons button:hover{
+    background: rgb(0, 137, 183);
+    box-shadow: 0 1px 3px rgba(0, 204, 255,0.2),1px 0 3px rgba(0, 204, 255,0.2),0 -1px 3px rgba(0, 204, 255,0.2),-1px 0 3px rgba(0, 204, 255,0.2);
+}
+
+.footer{
+    background: rgb(10, 18, 33);
+    color: #6d6c6c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 10%;
+    box-shadow: 0 -1px 2px rgb(22, 22, 22);
+}
+
+.footer h1{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.footer div{
+    width: 45%;
+    height: 50%;
+}
+
+.footer .links ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    gap: 15px;
+}
+
+.footer .links ul li{
+    list-style-type: none;
+    cursor: pointer;
+
+}
+
+.footer a{
+    text-decoration: none;
+    color: #6d6c6c;
+}
+
+.detail .hero-info{
+    top:10rem;
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    align-items: center;
+}
+
+.detail .card-img{
+    width: 300px;
+    z-index: -1;
+}
+
+.detail .hero-info{
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+}
+
+.detail .hero-info .movie-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.detail .movie-info .info{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    flex-wrap: wrap;
+
+}
+
+.detail ,.hero-info .info .quality{
+    font-size: 17px;
+}
+
+.detail .hero-info .title{
+    font-size: 2.3rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+}
+
+.detail .hero-info .movie-info .desc{
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.no-results{
+    font-size: 2rem;
+    font-weight: 300;
+    height: 51vh;
+}
+
+.more-info{
+    font-family: "ubuntu",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.pagination{
+    color: #fff;
+    margin: auto;
+}
+
+.pages{
+    display: flex;
+    gap: 1rem;
+}
+
+.pages li{
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.focused{
+    background-color: #fff;
+    color: rgb(0, 0, 48);
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .header .navigation li{
+        display: none;
+    }
+
+    .hero-info{
+        font-size: 1.3rem;
+    }
+
+    .hero-landing .desc span{
+        font-size: 1.8rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 700px){
+    .header{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .pagination .pages{
+        font-size: 1.2rem;
+    }
+
+    .detail .hero-info{
+        flex-direction: column;
+    }
+
+    .detail .hero-info .title{
+        font-size: 2rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: lighter;
+    }
+    
+    .detail .hero-info .movie-info .desc{
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+
+    .detail .hero-info .movie-info .more-info{
+        font-size: 1.2rem;
+    }
+    
+}
