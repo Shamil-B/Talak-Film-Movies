@@ -1,5 +1,5 @@
 ### Talak Film Movies
-Talak Film Movies is a movie website I created using React as a fun side project that allows users to search for movies, view detailed information about specific movies, and visit the IMDb website for further information about the movie.
+Talak Film Movies is a movie website I created using Reactjs as a fun side project that allows users to search for movies, view detailed information about specific movies, and visit the IMDb website for further information about the movie.
 
 ## Features
 * Search for movies by title
