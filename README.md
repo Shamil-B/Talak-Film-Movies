@@ -1,4 +1,4 @@
-### Talak Film Movies
+# Talak Film Movies
 Talak Film Movies is a movie website I created using Reactjs as a fun side project that allows users to search for movies, view detailed information about specific movies, and visit the IMDb website for further information about the movie.
 
 ## Features
@@ -8,22 +8,22 @@ Talak Film Movies is a movie website I created using Reactjs as a fun side proje
 * Allows visit to the IMDb website for the selected movie
 
 ## Installation
-# Clone the repository:
+### Clone the repository:
 * Copy code
 * git clone https://github.com/Shamil-B/Talak-Film-Movies.git
 
-# Navigate to the project directory:
+### Navigate to the project directory:
 * Copy code
 * cd Talak-Film-Movies
 
-# Install dependencies:
+### Install dependencies:
 * Copy code
 * npm install
 * 
-# Start the development server:
+### Start the development server:
 * Copy code
 * npm start
-# Open http://localhost:3000 in a web browser to view the website.
+### Open http://localhost:3000 in a web browser to view the website.
 
 
 ## Usage
@@ -41,6 +41,6 @@ To visit the IMDb website for the selected movie, click the "IMDb" button. This 
 * OMDB API
 * HTML, CSS, Javascript (Vanila CSS for the styling)
 
-Credits
+## Credits
 * This project uses the OMDB API to retrieve movie data.
 
